@@ -21,7 +21,7 @@ public void findAndReduceStock(String productId, int qty) {
   // 1. Potential long running task
   //
 
-  2. Non atomic use of MongoTemplate#save operation
+  // 2. Non atomic use of MongoTemplate#save operation
   availabilityRepository.save(productId, currentAvailability - qty);
 }
 ```
